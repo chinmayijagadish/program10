@@ -34,7 +34,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.program10.program10.App</mainClass><!-- Change to your actual mainclass-->
+              <mainClass>com.program10.program10.App</mainClass><!-- Change to your actual mainclass -->
             </manifest>
           </archive>
         </configuration>
