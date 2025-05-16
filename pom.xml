@@ -12,8 +12,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <maven.compiler.source>17</maven.compiler.source>
+     <maven.compiler.target>17</maven.compiler.target>
   </properties>
-
+ 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -22,4 +24,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+ <build>
+   <plugins>
+     <!--Plugins for creating executable JAR files -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.mavenproject10.project10.App</mainClass><!-- Change to your actual mainclass-->
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+   </plugins>
 </project>
